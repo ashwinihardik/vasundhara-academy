@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import '@/styles/about.css';
 
-export const metadata = { title: "Mission & Vision" };
+export const metadata = {
+  title: 'Mission, Vision & Values | Vasundhara Academy Akole',
+  description: 'Our mission is to empower marginalized communities through quality education, bridging the rural-urban gap with innovation and inclusivity at Vasundhara Academy Akole.',
+};
 
 export default function MissionVisionPage() {
   return (

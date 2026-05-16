@@ -59,10 +59,24 @@ export default function ContactPage() {
                   </p>
                 </div>
               </div>
+              <div className="contact-info-item">
+                <div className="contact-info-icon"><i className="fas fa-users-cog"></i></div>
+                <div>
+                  <h4>Key Contacts</h4>
+                  <p>
+                    <strong>Dr. Jayashri Deshmukh (Principal):</strong><br />
+                    <a href="tel:+919422051190" style={{ color: 'inherit', textDecoration: 'none' }}>+91 94220 51190</a>
+                  </p>
+                  <p style={{ marginTop: '0.5rem' }}>
+                    <strong>Radhika Nawale (Vice-Principal):</strong><br />
+                    <a href="tel:+918805254793" style={{ color: 'inherit', textDecoration: 'none' }}>+91 88052 54793</a>
+                  </p>
+                </div>
+              </div>
               <a href="tel:+919881945960" className="contact-info-item" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="contact-info-icon"><i className="fas fa-phone-alt"></i></div>
                 <div>
-                  <h4>Phone</h4>
+                  <h4>Office Phone</h4>
                   <p>+91 98819 45960</p>
                 </div>
               </a>
@@ -95,7 +109,7 @@ export default function ContactPage() {
                 </button>
               </div>
             ) : (
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} aria-label="Contact Enquiry Form">
                 <div className="form-group">
                   <label className="form-label" htmlFor="name">Full Name *</label>
                   <input 
@@ -104,8 +118,9 @@ export default function ContactPage() {
                     className="form-input" 
                     type="text" 
                     placeholder="Your full name" 
-                    autocomplete="name"
+                    autoComplete="name"
                     required 
+                    aria-required="true"
                     value={form.name} 
                     onChange={e => setForm({...form, name: e.target.value})} 
                   />
@@ -117,10 +132,11 @@ export default function ContactPage() {
                     name="phone"
                     className="form-input" 
                     type="tel" 
-                    inputmode="tel"
+                    inputMode="tel"
                     placeholder="+91 XXXXX XXXXX" 
-                    autocomplete="tel"
+                    autoComplete="tel"
                     required 
+                    aria-required="true"
                     value={form.phone} 
                     onChange={e => setForm({...form, phone: e.target.value})} 
                   />
@@ -133,7 +149,7 @@ export default function ContactPage() {
                     className="form-input" 
                     type="email" 
                     placeholder="your@email.com" 
-                    autocomplete="email"
+                    autoComplete="email"
                     spellCheck={false}
                     value={form.email} 
                     onChange={e => setForm({...form, email: e.target.value})} 
@@ -159,12 +175,13 @@ export default function ContactPage() {
                     className="form-textarea" 
                     placeholder="Your message…" 
                     required 
+                    aria-required="true"
                     value={form.message} 
                     onChange={e => setForm({...form, message: e.target.value})}
                   ></textarea>
                 </div>
-                {error && <p style={{ color: '#dc2626', fontSize: '0.85rem', marginBottom: '0.5rem' }}><i className="fas fa-exclamation-circle"></i> {error}</p>}
-                <button type="submit" className="btn btn-primary" style={{ width: '100%' }} disabled={sending}>
+                {error && <p style={{ color: '#dc2626', fontSize: '0.85rem', marginBottom: '0.5rem' }} role="alert"><i className="fas fa-exclamation-circle"></i> {error}</p>}
+                <button type="submit" className="btn btn-primary" style={{ width: '100%' }} disabled={sending} aria-label={sending ? "Sending message" : "Send message"}>
                   {sending ? <><i className="fas fa-spinner fa-spin"></i> Sending…</> : <><i className="fas fa-paper-plane"></i> Send Message</>}
                 </button>
               </form>

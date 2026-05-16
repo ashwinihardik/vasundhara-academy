@@ -3,7 +3,8 @@ import '@/styles/homepage.css';
 import StatCounter from '@/components/ui/StatCounter';
 
 export const metadata = {
-  title: 'Vasundhara Academy, Akole — CBSE School | Grades 1-10',
+  title: 'Vasundhara Academy Akole | CBSE School in Akole, Maharashtra',
+  description: 'Vasundhara Academy is a CBSE affiliated school in Akole, Maharashtra, focused on academics, values, sports, modern facilities, and holistic student development.',
 };
 
 export default function HomePage() {
@@ -72,10 +73,10 @@ export default function HomePage() {
         <div className="about-inner">
           <div className="about-images">
             <div className="about-img-main">
-              <img src="/images/school-photo-3.jpg" alt="Vasundhara Academy students" width="800" height="600" loading="lazy" />
+              <img src="/images/school-photo-3.jpg" alt="Students engaging in classroom activities at Vasundhara Academy Akole" width="800" height="600" loading="lazy" />
             </div>
             <div className="about-img-accent">
-              <img src="/images/school-photo-1.jpg" alt="Student achievements" width="400" height="300" loading="lazy" />
+              <img src="/images/school-photo-1.jpg" alt="Student achievements and trophies at Vasundhara Academy" width="400" height="300" loading="lazy" />
             </div>
             <div className="about-badge">
               <i className="fas fa-trophy"></i>
@@ -148,21 +149,21 @@ export default function HomePage() {
           <h2 className="section-title light">Our Pride &amp; Glory</h2>
           <div className="achievements-grid">
             <div className="achievement-card">
-              <img src="/images/school-photo-1.jpg" alt="Expert Abacus Achievement" width="400" height="320" loading="lazy" />
+              <img src="/images/school-photo-1.jpg" alt="Vasundhara Academy students winning State Level Expert Abacus Competition" width="400" height="320" loading="lazy" />
               <div className="achievement-overlay">
                 <h3>Expert Abacus Competition</h3>
                 <p>State Level Winners 2026</p>
               </div>
             </div>
             <div className="achievement-card">
-              <img src="/images/school-photo-2.jpg" alt="SOF Olympiad Achievement" width="400" height="320" loading="lazy" />
+              <img src="/images/school-photo-2.jpg" alt="Students of Vasundhara Academy Akole with SOF Olympiad awards" width="400" height="320" loading="lazy" />
               <div className="achievement-overlay">
                 <h3>SOF Olympiad</h3>
                 <p>Multiple Award Winners</p>
               </div>
             </div>
             <div className="achievement-card">
-              <img src="/images/school-photo-3.jpg" alt="Academic Excellence" width="400" height="320" loading="lazy" />
+              <img src="/images/school-photo-3.jpg" alt="Academic excellence and high board results at Vasundhara Academy" width="400" height="320" loading="lazy" />
               <div className="achievement-overlay">
                 <h3>Academic Excellence</h3>
                 <p>Outstanding Board Results</p>
@@ -213,8 +214,8 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              {/* Duplicate Set for Loop */}
-              <div className="testimonial-card">
+              {/* Duplicate Set for Loop - Hidden from Screen Readers */}
+              <div className="testimonial-card" aria-hidden="true">
                 <div className="testimonial-quote"><i className="fas fa-quote-left"></i></div>
                 <p>“Vasundhara Academy has been a blessing for our child. The teachers are incredibly dedicated and the CBSE curriculum is delivered with excellence.”</p>
                 <div className="testimonial-author">
@@ -225,7 +226,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="testimonial-card">
+              <div className="testimonial-card" aria-hidden="true">
                 <div className="testimonial-quote"><i className="fas fa-quote-left"></i></div>
                 <p>“My daughter won at the state-level Abacus competition. The school&apos;s focus on co-curricular activities alongside academics is remarkable.”</p>
                 <div className="testimonial-author">
@@ -241,12 +242,58 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── SEO TRUST BLOCK ── */}
+      <section className="about-section" style={{ background: 'var(--off-white)', paddingTop: '4rem', paddingBottom: '4rem' }}>
+        <div className="container text-center">
+          <div className="section-header">
+            <span className="section-tag"><i className="fas fa-minus"></i> Why Akole Trusts Us</span>
+            <h2 className="section-title">Trusted CBSE School in Akole, Maharashtra</h2>
+          </div>
+          <div style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.1rem', color: 'var(--text-gray)', lineHeight: '1.8' }}>
+            <p>
+              Vasundhara Academy, located on Dhamangaon Awari Road in Akole, provides a balanced learning 
+              environment with robust CBSE academics, co-curricular activities, discipline, and values. 
+              As one of the best schools in Akole, we focus on student confidence, creativity, and overall 
+              personality development through modern infrastructure and expert faculty.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ SECTION ── */}
+      <section className="features-section" style={{ background: 'var(--white)' }}>
+        <div className="container">
+          <div className="section-header text-center">
+            <span className="section-tag"><i className="fas fa-minus"></i> FAQs</span>
+            <h2 className="section-title">Frequently Asked Questions</h2>
+          </div>
+          <div className="features-grid" style={{ marginTop: '3rem' }}>
+            <div className="feature-card">
+              <h3>Is Vasundhara Academy CBSE affiliated?</h3>
+              <p>Yes, Vasundhara Academy is a CBSE affiliated school with Affiliation No. 1130637, offering education from Grade 1 to 10.</p>
+            </div>
+            <div className="feature-card">
+              <h3>Where is the school located?</h3>
+              <p>The school is located on Dhamangaon Awari Road, Akole, Tal. Akole, Dist. Ahmednagar, Maharashtra - 422601.</p>
+            </div>
+            <div className="feature-card">
+              <h3>How can I apply for admission?</h3>
+              <p>You can apply online through our website&apos;s admission portal or visit the school campus for a direct enquiry.</p>
+            </div>
+            <div className="feature-card">
+              <h3>What facilities does the school provide?</h3>
+              <p>We provide smart classrooms, science labs, computer labs, a library, sports facilities, and transport services for students.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA BANNER ── */}
       <section className="cta-section">
         <div className="cta-inner">
           <div className="cta-content">
             <h2>Admissions Open for 2026-27</h2>
-            <p>Give your child the best start with CBSE education. Limited seats available.</p>
+            <p>Give your child the best start with CBSE education in Akole. Limited seats available.</p>
           </div>
           <div className="cta-btns">
             <Link href="/admissions/apply" className="btn btn-navy btn-lg">

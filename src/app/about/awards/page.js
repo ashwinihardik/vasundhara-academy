@@ -1,13 +1,17 @@
 import Link from 'next/link';
 import '@/styles/about.css';
 
-export const metadata = { title: 'Awards & Recognition' };
+export const metadata = {
+  title: 'Awards & Recognition | Vasundhara Academy Akole Achievements',
+  description: 'Celebrating the academic, sports, and cultural achievements of our students at Vasundhara Academy Akole. State and National level recognition.',
+};
 
 export default function AwardsPage() {
   const awards = [
     { title: 'Expert Abacus State Level Competition', desc: 'Our students won at the State Level Expert Abacus Competition, showcasing exceptional mental arithmetic skills.', img: '/images/school-photo-1.jpg' },
-    { title: 'SOF Olympiad Achievers', desc: 'Multiple students recognized as award winners in Science Olympiad Foundation competitions.', img: '/images/school-photo-2.jpg' },
-    { title: 'Academic Excellence', desc: 'Consistent outstanding results in CBSE board examinations with exceptional pass rates.', img: '/images/school-photo-3.jpg' },
+    { title: 'SOF Olympiad Achievers', desc: 'Multiple students recognized as award winners in Science Olympiad Foundation (SOF) competitions.', img: '/images/school-photo-2.jpg' },
+    { title: 'Sports Excellence', desc: 'Our students have successfully participated and won at Taluka, District, State, and National levels in various sports competitions.', img: '/images/school-photo-3.jpg' },
+    { title: 'Academic Performance', desc: 'Consistent outstanding results in CBSE board examinations with exceptional pass rates and holistic growth.', img: '/images/school-photo-4.jpg' },
   ];
 
   return (

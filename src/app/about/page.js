@@ -2,8 +2,8 @@ import Link from 'next/link';
 import '@/styles/about.css';
 
 export const metadata = {
-  title: 'About Us',
-  description: 'Learn about Vasundhara Academy, Akole — our mission, vision, leadership, and commitment to CBSE education excellence.',
+  title: 'About Vasundhara Academy Akole | Best CBSE School in Akole',
+  description: 'Learn about Vasundhara Academy, a premier CBSE school in Akole, Maharashtra. Our mission, vision, and commitment to providing quality education and holistic development.',
 };
 
 export default function AboutPage() {
@@ -26,21 +26,16 @@ export default function AboutPage() {
           <h2 className="section-title">Welcome to Vasundhara Academy, Akole</h2>
           <div className="about-welcome-text">
             <p>
-              Vasundhara Academy, a prestigious institution under the Abhinav Education Society
-              (Reg. No: MAHA/2143/ANR), is a premier CBSE-affiliated school located in the scenic town
-              of Akole, Tal. Akole, Dist. Ahmednagar, Maharashtra. With CBSE Affiliation No. 1130637,
-              we offer quality education from Grade 1 through Grade 10.
+              Nestled in the serene Pravara River region and surrounded by the majestic foothills of the Sahyadri ranges, Vasundhara Academy, Akole is a center of holistic education rooted in values, and excellence. Established in 2014 and run by Abhinav Shikshan Sanstha, the academy has been committed to providing quality education with a vision of nurturing responsible, confident, and compassionate individuals.
             </p>
             <p>
-              Our academy is committed to providing a holistic learning environment where academic
-              excellence goes hand in hand with character building, sports, and creative exploration.
-              We believe every child has unique potential, and our mission is to help them discover
-              and develop it to the fullest.
+              Rooted in the rich cultural heritage and natural beauty of Akole, our institution offers an inspiring environment where education flourishes in harmony with nature. At Vasundhara Academy, we believe that education is not merely the acquisition of knowledge but the development of character, creativity, leadership, and social responsibility.
             </p>
             <p>
-              With state-of-the-art infrastructure, experienced faculty, and a curriculum that
-              blends traditional values with modern teaching methodologies, Vasundhara Academy
-              stands as a beacon of quality education in the Akole region.
+              With a strong focus on academic excellence, innovative teaching methods, and value-based education, we strive to create a learning atmosphere that empowers every child to realize their fullest potential. Along with scholastic achievement, equal emphasis is given to co-curricular activities, sports, life skills, environmental awareness, and personality development.
+            </p>
+            <p>
+              Guided by dedicated educators and supported by progressive educational practices, Vasundhara Academy continues to shape young minds into future-ready citizens who are intellectually competent, morally strong, and socially sensitive. Inspired by the enduring strength of the Sahyadri mountains and the nurturing flow of the Pravara River, our academy stands as a beacon of learning, discipline, and transformation in the Akole region.
             </p>
           </div>
         </div>

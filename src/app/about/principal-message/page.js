@@ -4,15 +4,17 @@ import Link from 'next/link';
 import '@/styles/about.css';
 
 const defaultMessage = {
-  name: 'Prin. Dr. Jayashri Deshmukh',
-  title: 'Principal',
-  message: `The aim of education goes beyond merely imparting knowledge from textbooks. Education and those in the field of education have a commitment of inculcating in young minds values of equality, justice, freedom, concern for others' well-being, secularism, respect for human dignity and rights, which are based on reason and understanding.
+  name: 'Dr. Jayashri Rajiv Deshmukh',
+  title: 'Principal, Vasundhara Academy, Akole',
+  message: `Welcome to Vasundhara Academy, Akole, where education is nurtured with dedication, discipline, and compassion. At our school, we believe that true education goes beyond textbooks and examinations; it develops values, skills, confidence, and a sense of responsibility towards society.
 
-Students need to learn to make choices in life independently, participate in decision making processes and be ready and equipped with the mental frame to face the consequences for their choices. The students need to learn how to learn and to respond to new situations in a flexible manner and to identify their self-spirit to reach the pinnacle of success in their future life.
+Our school stands as a center of learning and opportunity for every student. We strive to create a learner-centered environment where students are encouraged to think creatively, act ethically, and grow intellectually. Along with academic excellence, equal importance is given to co-curricular activities, sports, life skills, and character building so that our students become confident and responsible citizens of tomorrow.
 
-At Vasundhara Academy, we strive to provide an environment that encourages curiosity, critical thinking, and a love for learning. Our dedicated team of educators works tirelessly to ensure that every student receives the attention and guidance they need to excel — not just academically, but in every aspect of life.
+In today’s dynamic world, students need more than academic knowledge. They require confidence, communication skills, technological awareness, critical thinking, and strong moral grounding. Our committed teachers work tirelessly to create a positive and engaging learning environment where every child feels encouraged to explore his or her abilities and talents. The achievements of our students in academics, sports, arts, and various competitions inspire us to continue our pursuit of excellence.
 
-I invite all parents and students to join us on this beautiful journey of learning, growth, and excellence.`,
+I sincerely appreciate dedicated efforts of our teachers, the support of parents, and the enthusiasm of our students who continuously inspire us to achieve higher standards in education. In this rapidly changing world, we are committed to equipping students with modern knowledge, technological awareness, communication skills, and strong moral values.
+
+I express my sincere gratitude to the management, staff, parents, and well-wishers for their unwavering support and cooperation. May our school continue to spread the light of knowledge and inspire generations to dream, learn, and succeed.`,
 };
 
 export default function PrincipalMessagePage() {

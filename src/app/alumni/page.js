@@ -54,15 +54,15 @@ export default function AlumniPage() {
                   Join our alumni network and stay connected with the Vasundhara family.
                 </p>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} aria-label="Alumni Registration Form">
                   <div className="form-group">
                     <label className="form-label">Full Name *</label>
-                    <input className="form-input" type="text" placeholder="Your full name" required value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
+                    <input className="form-input" type="text" placeholder="Your full name" required aria-required="true" value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
                   </div>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <div className="form-group">
                       <label className="form-label">Year of Graduation *</label>
-                      <input className="form-input" type="text" placeholder="e.g., 2020" required value={form.graduateYear} onChange={e => setForm({...form, graduateYear: e.target.value})} />
+                      <input className="form-input" type="text" placeholder="e.g., 2020" required aria-required="true" value={form.graduateYear} onChange={e => setForm({...form, graduateYear: e.target.value})} />
                     </div>
                     <div className="form-group">
                       <label className="form-label">Phone Number</label>
@@ -81,7 +81,7 @@ export default function AlumniPage() {
                     <label className="form-label">Message / Memory to Share</label>
                     <textarea className="form-textarea" placeholder="Share your fondest memory of Vasundhara Academy..." value={form.message} onChange={e => setForm({...form, message: e.target.value})}></textarea>
                   </div>
-                  <button type="submit" className="btn btn-primary btn-lg" style={{ width: '100%' }} disabled={loading}>
+                  <button type="submit" className="btn btn-primary btn-lg" style={{ width: '100%' }} disabled={loading} aria-label={loading ? "Registering as alumni" : "Register as alumni"}>
                     {loading ? <><i className="fas fa-spinner fa-spin"></i> Registering...</> : <><i className="fas fa-user-plus"></i> Register as Alumni</>}
                   </button>
                 </form>

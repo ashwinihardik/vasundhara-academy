@@ -2,7 +2,10 @@ import Link from 'next/link';
 import '@/styles/about.css';
 import '@/styles/phase4.css';
 
-export const metadata = { title: 'Academic Calendar' };
+export const metadata = {
+  title: 'Academic Calendar 2026-27 | Vasundhara Academy Akole',
+  description: 'View the academic schedule, exam dates, school events, and holiday list for the year 2026-27 at Vasundhara Academy Akole.',
+};
 
 const months = [
   { name: 'April 2026', events: [

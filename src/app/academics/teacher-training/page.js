@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import '@/styles/about.css';
 
-export const metadata = { title: 'Teacher Training' };
+export const metadata = {
+  title: 'Teacher Training & Professional Development | Vasundhara Academy',
+  description: 'Our educators undergo regular training in ICT integration, NEP 2020 workshops, and pedagogical skills to provide the best learning experience at Vasundhara Academy Akole.',
+};
 
 const trainings = [
   { icon: 'fas fa-laptop', title: 'ICT Integration Training', desc: 'Training teachers to effectively use technology, smart boards, and digital tools in classroom teaching for enhanced student engagement.' },

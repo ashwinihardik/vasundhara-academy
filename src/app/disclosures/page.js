@@ -109,8 +109,8 @@ export default function DisclosuresPage() {
                           <p>{doc.desc}</p>
                         </div>
                       </div>
-                      <span className="doc-download" style={{ opacity: 0.5 }}>
-                        <i className="fas fa-clock" style={{ marginRight: '0.3rem' }}></i> Coming
+                      <span className="doc-download" style={{ opacity: 0.6, fontSize: '0.7rem', color: 'var(--gray-400)' }}>
+                        <i className="fas fa-clock" style={{ marginRight: '0.3rem' }}></i> Upload Pending
                       </span>
                     </div>
                   );

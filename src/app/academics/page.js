@@ -3,8 +3,8 @@ import '@/styles/about.css';
 import '@/styles/phase4.css';
 
 export const metadata = {
-  title: 'Academics',
-  description: 'Explore the comprehensive CBSE curriculum and academic programs at Vasundhara Academy.',
+  title: 'Academics & CBSE Curriculum | Vasundhara Academy Akole',
+  description: 'Explore the comprehensive CBSE curriculum, academic framework, and holistic learning programs at Vasundhara Academy, Akole. English medium education from Grade 1 to 10.',
 };
 
 export default function AcademicsPage() {

@@ -4,35 +4,34 @@ import LayoutWrapper from '@/components/layout/LayoutWrapper';
 
 export const metadata = {
   title: {
-    default: 'Vasundhara Academy, Akole — CBSE School | Grades 1-10',
-    template: '%s | Vasundhara Academy',
+    default: 'Vasundhara Academy Akole | CBSE School in Akole, Maharashtra',
+    template: '%s | Vasundhara Academy Akole',
   },
   description:
-    "Abhinav Education Society's Vasundhara Academy — a premier CBSE-affiliated school in Akole, Ahmednagar, offering quality education from Grade 1 to 10. Expert Abacus & SOF Olympiad winners.",
+    'Vasundhara Academy is a premier CBSE affiliated school in Akole, Maharashtra, providing quality English medium education, modern facilities, and holistic student development.',
   keywords: [
-    'Vasundhara Academy',
-    'CBSE school Akole',
-    'Abhinav Education Society',
-    'school in Ahmednagar',
-    'CBSE school Maharashtra',
-    'best school Akole',
-    'CBSE affiliation 1130637',
-    'school Akole Ahmednagar',
-    'Vasundhara Academy fees',
-    'admission Akole school',
+    'Vasundhara Academy Akole',
+    'CBSE school in Akole',
+    'Best school in Akole',
+    'School admission in Akole',
+    'CBSE affiliated school in Akole Maharashtra',
+    'English medium school in Akole',
+    'School near Dhamangaon Awari Road Akole',
+    'Abhinav Education Society Akole',
+    'Vasundhara Academy admission',
   ],
   authors: [{ name: 'Vasundhara Academy' }],
-  creator: 'Abhinav Education Society, Akole',
+  creator: 'Vasundhara Academy',
   publisher: 'Vasundhara Academy',
-  metadataBase: new URL('https://vasundharaacademy.edu.in'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://vasundhara-academy.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Vasundhara Academy, Akole — CBSE School | Grades 1-10',
-    description: 'Premier CBSE-affiliated school in Akole, Ahmednagar. Quality education from Grade 1-10 with expert faculty, modern infrastructure, and holistic development.',
-    url: 'https://vasundharaacademy.edu.in',
-    siteName: 'Vasundhara Academy',
+    title: 'Vasundhara Academy Akole | CBSE School in Akole, Maharashtra',
+    description: 'Premier CBSE-affiliated English medium school in Akole, Maharashtra. Focused on academics, values, sports, and modern facilities.',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://vasundhara-academy.vercel.app',
+    siteName: 'Vasundhara Academy Akole',
     type: 'website',
     locale: 'en_IN',
     images: [
@@ -40,14 +39,14 @@ export const metadata = {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Vasundhara Academy, Akole - CBSE School',
+        alt: 'Vasundhara Academy Akole School Campus',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vasundhara Academy, Akole — CBSE School',
-    description: 'Premier CBSE-affiliated school in Akole. Quality education Grade 1-10.',
+    title: 'Vasundhara Academy Akole | CBSE School in Akole, Maharashtra',
+    description: 'Premier CBSE-affiliated school in Akole. Quality education from Grade 1-10.',
     images: ['/images/og-image.jpg'],
   },
   robots: {
@@ -61,9 +60,6 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    // google: 'your-google-verification-code', // Add after Google Search Console setup
-  },
 };
 
 // JSON-LD Structured Data
@@ -71,11 +67,10 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'School',
   name: 'Vasundhara Academy',
-  alternateName: "Abhinav Education Society's Vasundhara Academy",
-  url: 'https://vasundharaacademy.edu.in',
-  logo: 'https://vasundharaacademy.edu.in/images/logo.png',
-  image: 'https://vasundharaacademy.edu.in/images/og-image.jpg',
-  description: 'Premier CBSE-affiliated school in Akole, Ahmednagar offering quality education from Grade 1 to 10.',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://vasundhara-academy.vercel.app',
+  logo: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://vasundhara-academy.vercel.app'}/images/logo.png`,
+  image: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://vasundhara-academy.vercel.app'}/images/og-image.jpg`,
+  description: 'Vasundhara Academy is a CBSE affiliated school in Akole, Maharashtra, focused on academics, values, sports, modern facilities, and holistic student development.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Dhamangaon Awari Road',
@@ -91,16 +86,12 @@ const jsonLd = {
   },
   telephone: '+91-98819-45960',
   email: 'vasundhara.academy2016@gmail.com',
-  foundingDate: '2016',
-  founder: {
-    '@type': 'Organization',
-    name: 'Abhinav Education Society, Akole',
-  },
-  sameAs: [],
-  areaServed: {
-    '@type': 'Place',
-    name: 'Akole, Ahmednagar, Maharashtra',
-  },
+  foundingDate: '2014',
+  award: 'Expert Abacus State Level Winners, SOF Olympiad Winners',
+  identifier: 'CBSE Affiliation No. 1130637',
+  sameAs: [
+    'https://wa.me/919881945960'
+  ],
 };
 
 export default function RootLayout({ children }) {

@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://vasundharaacademy.edu.in';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://vasundhara-academy.vercel.app';
 
   const routes = [
     { url: '/', changeFrequency: 'weekly', priority: 1.0 },
@@ -31,6 +31,7 @@ export default function sitemap() {
     { url: '/why-vasundhara', changeFrequency: 'monthly', priority: 0.7 },
     { url: '/contact', changeFrequency: 'monthly', priority: 0.8 },
     { url: '/enquire', changeFrequency: 'monthly', priority: 0.8 },
+    { url: '/stories', changeFrequency: 'monthly', priority: 0.6 },
   ];
 
   return routes.map((route) => ({

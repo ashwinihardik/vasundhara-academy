@@ -4,15 +4,19 @@ import Link from 'next/link';
 import '@/styles/about.css';
 
 const defaultMessage = {
-  name: "Mr. Vikram Nawale",
-  title: "President, Abhinav Education Society, Akole",
-  message: `It gives me immense pleasure to welcome you to the Abhinav Education Society's Vasundhara Academy — an institution that stands as a testament to our commitment towards quality education and the holistic development of young minds.
+  name: "Mr. Madhukarrao Nawale",
+  title: "President, Abhinav Shikshan Sanstha, Akole",
+  message: `It gives me immense pleasure to welcome you to Vasundhara Academy, Akole, which has always remained committed to providing quality education along with strong moral values and holistic development. We believe that education is not merely the acquisition of knowledge, but the shaping of character, confidence, creativity, and social responsibility.
 
-When we established this academy, our vision was clear — to create a school in Akole that provides world-class CBSE education while staying rooted in our rich cultural values. Today, seeing our students excel in academics, sports, and various competitions at the state level fills my heart with pride and joy.
+Since its inception, Sanstha has been deeply committed to serving the downtrodden sections of society, especially students from hilly, tribal, and rural areas. We strongly believe that every child, irrespective of social or economic background, deserves access to quality education and opportunities for a brighter future. Education is the most powerful tool for social transformation, and our institution continues to work tirelessly to uplift underprivileged communities through inclusive and value-based education.
 
-Our students' achievements in the Expert Abacus State Level Competition and SOF Olympiads are a reflection of the dedication of our teachers and the hard work of our students. We will continue to strive for excellence and provide every possible opportunity for our children to grow and succeed.
+With the dedicated efforts of our teachers, students, parents, and management, we continuously strive to create a learning environment that nurtures excellence in academics, sports, culture, and life skills. We are proud of our journey and remain committed to empowering every student to become a responsible citizen and a compassionate human being.
 
-I extend my heartfelt gratitude to all parents for their trust in our institution. Together, let us shape a brighter future for our children and our nation.`,
+In today's rapidly changing world, our aim is to equip students with modern knowledge, technological skills, and ethical values so that they can confidently face future challenges. We believe that every child possesses unique potential, and our institution works tirelessly to help them discover and develop their talents.
+
+I extend my heartfelt gratitude to all stakeholders for their constant support and trust in our Sanstha. Together, let us continue this noble mission of transforming lives through education and social service.
+
+With best wishes for a bright and successful future.`,
 };
 
 export default function PresidentMessagePage() {

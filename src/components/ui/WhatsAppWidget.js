@@ -74,7 +74,7 @@ export default function WhatsAppWidget({ phoneNumber = '919881945960', message =
               <i className="fas fa-user-graduate"></i>
               <div className="wa-status-dot"></div>
             </div>
-            <div className="wa-bubble-info">
+            <div className="wa-bubble-info" aria-live="polite">
               <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--navy)', display: 'block' }}>Admissions Office</span>
               <span style={{ fontSize: '0.65rem', color: '#25D366', fontWeight: 600 }}>
                 {isTyping ? 'Typing...' : 'Online'}

@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import '@/styles/about.css';
 
-export const metadata = { title: 'General Information' };
+export const metadata = {
+  title: 'School General Information | Vasundhara Academy Akole',
+  description: 'Quick facts about Vasundhara Academy Akole: CBSE affiliation, school timings, English medium instruction, and contact details.',
+};
 
 export default function GeneralInfoPage() {
   return (
@@ -24,7 +27,7 @@ export default function GeneralInfoPage() {
               <div className="info-card-icon"><i className="fas fa-school"></i></div>
               <h3>School Name</h3>
             </div>
-            <p>Abhinav Education Society&apos;s<br /><strong>Vasundhara Academy</strong></p>
+            <p>Abhinav Shikshan Sanstha&apos;s<br /><strong>Vasundhara Academy</strong></p>
           </div>
           <div className="info-card">
             <div className="info-card-header">
@@ -83,7 +86,7 @@ export default function GeneralInfoPage() {
               <div className="info-card-icon"><i className="fas fa-users"></i></div>
               <h3>Managing Body</h3>
             </div>
-            <p>Abhinav Education Society, Akole<br />Dist. Ahmednagar, Maharashtra</p>
+            <p>Abhinav Shikshan Sanstha, Akole<br />Dist. Ahmednagar, Maharashtra</p>
           </div>
         </div>
       </section>

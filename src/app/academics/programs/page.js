@@ -2,7 +2,10 @@ import Link from 'next/link';
 import '@/styles/about.css';
 import '@/styles/phase4.css';
 
-export const metadata = { title: 'Academic Programs' };
+export const metadata = {
+  title: 'Co-curricular & Enrichment Programs | Vasundhara Academy',
+  description: 'Explore our wide range of programs including Abacus training, Olympiad preparation, sports coaching, art, music, and yoga at Vasundhara Academy Akole.',
+};
 
 const programs = [
   { title: 'Expert Abacus Training', category: 'Enrichment', desc: 'Mental arithmetic program that builds concentration, speed, and problem-solving skills. Our students regularly win at state-level competitions.' },

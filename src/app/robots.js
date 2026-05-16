@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ['/admin/', '/api/admin/'],
       },
     ],
-    sitemap: 'https://vasundharaacademy.edu.in/sitemap.xml',
+    sitemap: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://vasundhara-academy.vercel.app'}/sitemap.xml`,
   };
 }

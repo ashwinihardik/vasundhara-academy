@@ -3,8 +3,8 @@ import '@/styles/about.css';
 import '@/styles/pages.css';
 
 export const metadata = {
-  title: 'Why Vasundhara Academy',
-  description: 'Discover why Vasundhara Academy stands apart — the right curriculum, faculty, environment, approach, and skills.',
+  title: 'Why Vasundhara Academy | Our Philosophy & Educational Excellence',
+  description: 'Discover why families trust Vasundhara Academy Akole for their children\'s future. Learn about our CBSE curriculum, experienced faculty, and holistic learning environment.',
 };
 
 export default function WhyVasundharaPage() {

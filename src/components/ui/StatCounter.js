@@ -54,7 +54,14 @@ export default function StatCounter({ target, duration = 2000, suffix = '' }) {
 
   return (
     <span ref={elementRef}>
-      {count}{suffix}
+      {/* Animated value for users, hidden from screen readers to avoid double reading */}
+      <span aria-hidden="true">
+        {count}{suffix}
+      </span>
+      {/* Static value for SEO bots and Screen Readers */}
+      <span className="sr-only">
+        {target}{suffix}
+      </span>
     </span>
   );
 }

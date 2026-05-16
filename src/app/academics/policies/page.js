@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import '@/styles/about.css';
 
-export const metadata = { title: 'Policies & Rules' };
+export const metadata = {
+  title: 'School Policies & Code of Conduct | Vasundhara Academy Akole',
+  description: 'Understand the guidelines that ensure a safe and productive learning environment at Vasundhara Academy, including attendance, discipline, and examination policies.',
+};
 
 const policies = [
   { icon: 'fas fa-clock', title: 'Attendance Policy', items: ['Minimum 75% attendance mandatory for all students', 'Prior written application for leaves exceeding 3 days', 'Late arrivals noted; 3 consecutive late marks result in parent notification', 'Medical leave requires doctor certificate'] },

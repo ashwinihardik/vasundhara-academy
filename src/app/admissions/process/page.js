@@ -5,12 +5,12 @@ import '@/styles/phase5.css';
 export const metadata = { title: 'Admission Process' };
 
 const steps = [
-  { num: '1', title: 'Enquiry & Campus Visit', desc: 'Contact the school office or visit the campus to learn about our programs, facilities, and academic approach. Schedule a tour with our admission team.' },
-  { num: '2', title: 'Collect Application Form', desc: 'Obtain the admission form from the school office or download it from the website. You can also apply online through our portal.' },
-  { num: '3', title: 'Submit Application', desc: 'Fill in the application form with all required details along with the necessary documents (Birth Certificate, Aadhar, TC, Photos).' },
-  { num: '4', title: 'Interaction / Assessment', desc: 'An informal interaction with the student and parents. For Grade 6 and above, a basic assessment in English, Hindi, and Mathematics.' },
-  { num: '5', title: 'Admission Confirmation', desc: 'Upon selection, complete the admission formalities by paying the registration fee and first installment of the annual fee.' },
-  { num: '6', title: 'Welcome to Vasundhara', desc: 'Receive the welcome kit including uniform details, school calendar, bus routes, and student ID. Your child is now part of the Vasundhara family!' },
+  { num: '1', title: 'Enquiry & Campus Visit', desc: 'Visit the school office or contact us to learn about our academic programs and facilities. Parents can collect the school brochure and application form directly from the office.' },
+  { num: '2', title: 'Application Submission', desc: 'Submit the completely filled admission form along with required documents like Birth Certificate, Leaving Certificate, and Aadhar details.' },
+  { num: '3', title: 'Verification & Interaction', desc: 'Our team will verify the submitted documents. This is followed by an informal interaction with the student and parents.' },
+  { num: '4', title: 'Admission Confirmation', desc: 'Confirmation is based on document verification, interaction outcomes, and availability of seats as per school guidelines.' },
+  { num: '5', title: 'Payment of Fees', desc: 'Once confirmed, complete the admission formalities by paying the necessary fees at the school office.' },
+  { num: '6', title: 'Welcome to Vasundhara', desc: 'Join the Vasundhara family! Receive the school calendar, uniform details, and transportation info to begin your journey.' },
 ];
 
 export default function ProcessPage() {

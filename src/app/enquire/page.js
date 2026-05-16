@@ -67,15 +67,15 @@ export default function EnquirePage() {
                 <p style={{ color: 'var(--gray-400)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
                   Fill in the details and we&apos;ll get back to you shortly.
                 </p>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} aria-label="Quick Enquiry Form">
                   <div className="form-group">
                     <label className="form-label">Parent/Guardian Name *</label>
-                    <input className="form-input" type="text" placeholder="Enter your name" required value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
+                    <input className="form-input" type="text" placeholder="Enter your name" required aria-required="true" value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
                   </div>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                     <div className="form-group">
                       <label className="form-label">Phone Number *</label>
-                      <input className="form-input" type="tel" placeholder="+91 XXXXX XXXXX" required value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} />
+                      <input className="form-input" type="tel" placeholder="+91 XXXXX XXXXX" required aria-required="true" value={form.phone} onChange={e => setForm({...form, phone: e.target.value})} />
                     </div>
                     <div className="form-group">
                       <label className="form-label">Email</label>
@@ -84,7 +84,7 @@ export default function EnquirePage() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">Enquiry About</label>
-                    <select className="form-select" value={form.subject} onChange={e => setForm({...form, subject: e.target.value})}>
+                    <select className="form-select" aria-label="Select enquiry topic" value={form.subject} onChange={e => setForm({...form, subject: e.target.value})}>
                       <option value="">Select topic...</option>
                       <option>Admissions (Grade 1-5)</option>
                       <option>Admissions (Grade 6-8)</option>
@@ -97,9 +97,9 @@ export default function EnquirePage() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">Your Message *</label>
-                    <textarea className="form-textarea" placeholder="Type your message here..." required value={form.message} onChange={e => setForm({...form, message: e.target.value})}></textarea>
+                    <textarea className="form-textarea" placeholder="Type your message here..." required aria-required="true" value={form.message} onChange={e => setForm({...form, message: e.target.value})}></textarea>
                   </div>
-                  <button type="submit" className="btn btn-primary" style={{ width: '100%' }} disabled={loading}>
+                  <button type="submit" className="btn btn-primary" style={{ width: '100%' }} disabled={loading} aria-label={loading ? "Submitting enquiry" : "Submit enquiry"}>
                     {loading ? <><i className="fas fa-spinner fa-spin"></i> Submitting...</> : <><i className="fas fa-paper-plane"></i> Submit Enquiry</>}
                   </button>
                 </form>

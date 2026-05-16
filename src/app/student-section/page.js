@@ -3,16 +3,16 @@ import '@/styles/about.css';
 import '@/styles/phase5.css';
 
 export const metadata = {
-  title: 'Student Section',
-  description: 'Student life at Vasundhara Academy — discipline, hobbies, sports, and alumni.',
+  title: 'Student Life & Activities | Vasundhara Academy Akole',
+  description: 'Experience a vibrant student life at Vasundhara Academy Akole. Explore our morning assembly, sports, co-curricular activities, and holistic development programs.',
 };
 
 const sections = [
-  { icon: 'fas fa-user-check', title: 'Student Discipline', desc: 'We believe discipline is the foundation of success. Our code of conduct instills values of respect, responsibility, and integrity in every student.', items: ['Uniform compliance mandatory', 'Punctuality and regular attendance', 'Respect for teachers and peers', 'No mobile phones on campus', 'Anti-bullying pledge by all students'] },
-  { icon: 'fas fa-backpack', title: 'No School Bag Day', desc: 'Every Saturday is observed as "No School Bag Day" to reduce the physical burden on students and promote activity-based learning.', items: ['Saturdays designated as bag-free days', 'Activity-based and project learning', 'Sports, art, music, and life skills sessions', 'Storytelling and group discussions', 'Reduces physical strain on young students', 'Encourages creativity and expression'] },
-  { icon: 'fas fa-palette', title: 'Hobbies & Co-Curricular', desc: 'Beyond textbooks, we encourage students to explore their creative side through various hobby clubs and activities.', items: ['Art & Craft Club', 'Music & Dance Club', 'Science & Innovation Club', 'Literary Club (Debates, Poetry)', 'Eco Club & Nature Walks', 'Photography Club'] },
-  { icon: 'fas fa-futbol', title: 'Sports & Athletics', desc: 'Physical fitness and sportsmanship are integral parts of our educational philosophy.', items: ['Cricket & Football', 'Kho-Kho & Kabaddi', 'Athletics & Track Events', 'Indoor Games (Chess, Carrom, TT)', 'Annual Sports Day Competition', 'Inter-school tournaments'] },
-  { icon: 'fas fa-graduation-cap', title: 'Alumni Network', desc: 'Our alumni are our pride. Many have gone on to excel in various fields, carrying the values and education of Vasundhara Academy.', items: ['Annual alumni meet', 'Mentorship programs for current students', 'Alumni success stories shared regularly', 'Career guidance sessions by alumni'] },
+  { icon: 'fas fa-sun', title: 'Morning Assembly', desc: 'The school day begins with the morning assembly at 9:55 a.m. It helps students imbibe moral and ethical principles through prayers and collaborative activities.', items: ['National Anthem & Preamble', 'State Song & School Prayer', 'News, Current Affairs & Amazing Facts', 'Importance of the Day talks', 'Skits, Poems, and Group Performances', 'Platform for every child to showcase talent'] },
+  { icon: 'fas fa-futbol', title: 'Sports & Fitness', desc: 'Physical fitness is an essential part of students’ overall development. We emphasize regular physical training, yoga, and a wide variety of games.', items: ['Regular physical training sessions', 'Yoga and meditation for mental well-being', 'Coaching in various indoor/outdoor games', 'Emphasis on strength, stamina, and discipline', 'Inter-school sports competitions', 'Focus on teamwork and sportsmanship'] },
+  { icon: 'fas fa-palette', title: 'Co-curricular Activities', desc: 'We believe in holistic development through a wide range of academic and creative activities conducted throughout the year.', items: ['Debates, Elocution & Essay Writing', 'Drawing, Quizzes & Cultural Programs', 'Science Exhibitions & Educational Tours', 'National Festival Celebrations', 'Social Awareness Initiatives', 'Annual Cultural Gathering'] },
+  { icon: 'fas fa-brain', title: 'Activity Based Learning', desc: 'Making education interactive and student-centered through projects, experiments, and hands-on experiences.', items: ['Project-based conceptual understanding', 'Scientific experiments and models', 'Student presentations and group work', 'Educational games and simulations', 'Hands-on practical learning', 'Better retention of knowledge'] },
+  { icon: 'fas fa-calendar-star', title: 'Celebrations', desc: 'We celebrate cultural unity and national pride through various festivals and important school events.', items: ['Independence Day & Republic Day', 'Teachers’ Day & Children’s Day', 'Environment Day & International Yoga Day', 'Cultural Festivals & Annual Functions', 'Thematic days and awareness weeks', 'Unity and patriotism building events'] },
 ];
 
 export default function StudentSectionPage() {
