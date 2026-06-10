@@ -4,6 +4,12 @@ import '@/styles/about.css';
 import '@/styles/phase4.css';
 import Lightbox from '@/components/ui/Lightbox';
 
+export const metadata = {
+  title: 'Modern School Facilities | Vasundhara Academy Akole',
+  description: 'Explore the modern infrastructure, smart classrooms, science labs, computer lab, library, and sports facilities at Vasundhara Academy in Akole.',
+};
+
+
 const facilities = [
   { title: 'Smart Classrooms', category: 'Educational', icon: 'fas fa-chalkboard-teacher', color: '#2563eb', desc: 'Our classrooms go beyond traditional chalk-and-board methods. Pre-primary & Primary sections are equipped with TVs and tabs for joyful learning through animated videos and interactive content. Secondary sections feature interactive boards for audio-visual teaching and concept-based learning.', galleryTag: 'classroom' },
   { title: 'Science Laboratory', category: 'Educational', icon: 'fas fa-flask', color: '#7c3aed', desc: 'Spacious and fully equipped physics, chemistry, and biology labs. Students learn through experiments, observations, and hands-on activities that strengthen their scientific attitude and logical thinking.', galleryTag: 'science-lab' },

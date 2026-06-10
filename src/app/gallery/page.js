@@ -3,13 +3,17 @@ import { useState, useEffect } from 'react';
 import '@/styles/about.css';
 import '@/styles/phase4.css';
 import Lightbox from '@/components/ui/Lightbox';
+import Image from 'next/image';
+
 
 const categoryTabs = [
   { key: 'all', label: 'All Photos', icon: 'fas fa-th' },
-  { key: 'general', label: 'General', icon: 'fas fa-images' },
-  { key: 'campus', label: 'Campus', icon: 'fas fa-school' },
-  { key: 'awards', label: 'Awards', icon: 'fas fa-trophy' },
-  { key: 'achievements', label: 'Achievements', icon: 'fas fa-medal' },
+  { key: 'campus-facilities', label: 'Campus & Facilities', icon: 'fas fa-school' },
+  { key: 'academics-learning', label: 'Academics & Learning', icon: 'fas fa-book-open' },
+  { key: 'co-curricular-arts', label: 'Co-Curricular & Arts', icon: 'fas fa-palette' },
+  { key: 'sports-fitness', label: 'Sports & Fitness', icon: 'fas fa-running' },
+  { key: 'events-celebrations', label: 'Events & Celebrations', icon: 'fas fa-calendar-alt' },
+  { key: 'achievements', label: 'Achievements', icon: 'fas fa-trophy' },
 ];
 
 export default function GalleryPage() {
@@ -19,17 +23,17 @@ export default function GalleryPage() {
   const [lightboxData, setLightboxData] = useState(null);
 
   useEffect(() => {
-    fetch('/api/public/gallery')
+    fetch('/images/gallery/data.json')
       .then(r => r.json())
       .then(data => { setImages(data); setLoaded(true); })
       .catch(() => setLoaded(true));
   }, []);
 
-  const filtered = activeTab === 'all' ? images : images.filter(i => (i.category || '').toLowerCase() === activeTab);
+  const filtered = activeTab === 'all' ? images : images.filter(i => (i.category || '') === activeTab);
 
   const openLightbox = (idx) => {
     setLightboxData({
-      images: filtered.map(i => ({ url: i.url, title: i.title })),
+      images: filtered.map(i => ({ url: i.url, title: '' })),
       startIndex: idx,
     });
   };
@@ -76,7 +80,7 @@ export default function GalleryPage() {
               <i className="fas fa-images" style={{ fontSize: '3rem', color: 'var(--gray-300)', display: 'block', marginBottom: '1rem' }}></i>
               <h3 style={{ color: 'var(--navy)', fontFamily: 'var(--font-heading)', marginBottom: '0.5rem' }}>No Photos Yet</h3>
               <p style={{ color: 'var(--gray-400)', fontSize: '0.9rem' }}>
-                {activeTab === 'all' ? 'Photos will appear here once uploaded via the admin panel.' : `No ${activeTab} photos available yet.`}
+                Photos will appear here soon.
               </p>
             </div>
           ) : (
@@ -103,7 +107,7 @@ export default function GalleryPage() {
                 >
                   <img
                     src={img.url}
-                    alt={img.title || 'Gallery photo'}
+                    alt={`Vasundhara Academy ${img.category.replace('-', ' ')}`}
                     loading="lazy"
                     style={{
                       width: '100%', height: '100%', objectFit: 'cover',
@@ -123,12 +127,7 @@ export default function GalleryPage() {
                     onMouseOver={e => e.currentTarget.style.opacity = 1}
                     onMouseOut={e => e.currentTarget.style.opacity = 0}
                   >
-                    {img.title && (
-                      <p style={{ color: 'white', fontSize: '0.85rem', fontWeight: 600 }}>{img.title}</p>
-                    )}
-                    <span style={{ color: 'var(--gold)', fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1px', marginTop: '0.2rem' }}>
-                      {img.category || 'General'}
-                    </span>
+                    
                   </div>
                   {/* Zoom icon */}
                   <div style={{
@@ -152,7 +151,7 @@ export default function GalleryPage() {
           {loaded && filtered.length > 0 && (
             <p style={{ marginTop: '2rem', color: 'var(--gray-400)', fontSize: '0.82rem' }}>
               Showing {filtered.length} photo{filtered.length !== 1 ? 's' : ''}
-              {activeTab !== 'all' && ` in ${activeTab}`}
+              {activeTab !== 'all' && ` in ${categoryTabs.find(t => t.key === activeTab)?.label}`}
             </p>
           )}
         </div>

@@ -4,6 +4,12 @@ import { useState } from 'react';
 import '@/styles/about.css';
 import '@/styles/pages.css';
 
+export const metadata = {
+  title: 'Contact Vasundhara Academy Akole | Address & Phone',
+  description: 'Get in touch with Vasundhara Academy in Akole for school admissions, inquiries, and support. Find our location on Dhamangaon Awari Road, contact numbers, and email.',
+};
+
+
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', phone: '', email: '', subject: '', message: '' });
   const [sending, setSending] = useState(false);

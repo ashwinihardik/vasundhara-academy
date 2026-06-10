@@ -3,8 +3,8 @@ import '@/styles/about.css';
 import '@/styles/phase5.css';
 
 export const metadata = {
-  title: 'School Admission in Akole 2026-27 | Vasundhara Academy',
-  description: 'Apply for admission at Vasundhara Academy Akole for the academic year 2026-27. Explore our admission process, required documents, eligibility, and fee structure.',
+  title: 'Admissions 2026-27 | School Admission in Akole',
+  description: 'Apply for admission at Vasundhara Academy Akole for the 2026-27 academic year. Learn about our simple, transparent admission process, fee structure, and online application.',
 };
 
 export default function AdmissionsPage() {

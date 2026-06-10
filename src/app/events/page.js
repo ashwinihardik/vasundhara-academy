@@ -4,6 +4,12 @@ import Link from 'next/link';
 import '@/styles/about.css';
 import '@/styles/phase4.css';
 
+export const metadata = {
+  title: 'School Events & News | Vasundhara Academy Akole',
+  description: 'Stay updated with the latest school events, celebrations, news, announcements, and activities at Vasundhara Academy.',
+};
+
+
 const defaultEvents = [
   { title: 'Annual Day Celebration', desc: 'A grand celebration of talent, culture, and academic achievements with performances by students from all grades.', category: 'Celebration', img: '/images/school-photo-1.jpg', date: { day: '15', month: 'Dec' }, photos: 45 },
   { title: 'Expert Abacus Competition', desc: 'Students demonstrated exceptional mental arithmetic skills at the State Level Expert Abacus Competition.', category: 'Achievement', img: '/images/school-photo-2.jpg', date: { day: '10', month: 'Oct' }, photos: 20 },
